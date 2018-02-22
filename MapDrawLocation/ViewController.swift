@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     func requestForLocation(origin: String, destination: String){
         
-        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyCCv8Le5XonwONQSy81pVhkDpcyc1Dv2u4"
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyB-W62cok9muGo57ZVfX5sFXtgzQo4d_vs"
         Alamofire.request(url, method: .get)
             .responseJSON { response in
                 switch response.result {
